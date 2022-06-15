@@ -220,6 +220,7 @@ header.active {
     position: relative;
     width: 1300px;
     margin: auto;
+    padding: 120px 0 30px 0;
 }
 
 .service-bg-inner h2 {
