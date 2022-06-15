@@ -1,0 +1,1496 @@
+/* =================== Web Fonts =================== */
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Google Font - Pretandard KR */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* Google Font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Google Font - Exo 2 */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700&display=swap');
+
+/* =================== Reset CSS =================== */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button, input {
+    outline: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+/* =================== Default CSS =================== */
+
+* {
+    font-family: Pretendard, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7em;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =================== Header =================== */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+    transition: 0.5s;
+    /* background-color: #fff; */
+}
+
+header.active {
+    background-color: #fff;
+}
+
+.header-inner {
+    width: 1300px;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 18px;
+    padding-bottom: 6px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    margin-top: -4px;
+}
+
+.gnb {
+    float: right;
+}
+
+.gnb a {
+    margin: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    transition: 0.5s;
+}
+
+.gnb a:hover {
+    font-weight: 600;
+}
+
+
+/* =================== Section : welcome =================== */
+
+.welcome {
+    height: 100vh;
+    position: relative;
+}
+
+.welcome-heading {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    left: 50px;
+    text-align: center;
+    width: 750px;
+}
+
+.welcome-heading span {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.welcome-heading h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.welcome-heading h1 span {
+    font-family: Pretendard, sans-serif;
+    font-size: 30px;
+}
+.welcome-heading h1 em {
+    display: block;
+    font-style: normal;
+    color: #6D66FF;
+    font-size: 35px;
+}
+
+.welcome-heading p {
+    padding: 0 50px;
+    margin-bottom: 37px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.welcome-btns .btn {
+    display: inline-block;
+    width: 120px;
+    padding: 8px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.btn.start {
+    background-color: #6D66FF;
+}
+
+.btn.guide {
+    background-color: #fff;
+    color: #6D66FF;
+}
+
+/* Mouse Wheele */
+
+.mouse {
+    border: 2px solid #6D66FF;
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    border-radius: 30px;
+    bottom: 80px;
+    left: 200px;
+}
+
+.wheele {
+    position: absolute;
+    width: 2.5px;
+    height: 9px;
+    background-color: #6D66FF;
+    border-radius: 4px;
+    top: 5.5px;
+    left: 9.5px;
+    animation: wheele 1.2s linear infinite;
+}
+
+@keyframes wheele {
+    0% {
+        top: 5.5px;
+    }
+    50% {
+        top: 11px;
+    }
+    100% {
+        top: 5.5px;
+    }
+}
+
+/* =================== Section : service-bg =================== */
+
+.service-bg {
+    padding: 80px 0px 80px 0;
+}
+
+.service-bg-inner {
+    position: relative;
+    width: 1300px;
+    margin: auto;
+}
+
+.service-bg-inner h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 20px 0 30px 5px;
+}
+
+.service-bg-inner .service-bg-desc {
+    text-align: center;
+    margin-left: 50px;
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.service-bg-inner .service-bg-desc:last-child {
+    border: none;
+}
+
+.service-bg-inner .service-bg-desc h3 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.service-bg-inner .service-bg-desc p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.service-bg-inner h2 .fa-check-square-o {
+    font-size: 24px;
+    color: #6D66FF;
+    padding-right: 10px;
+}
+
+.fa-check-square-o {
+    font-size: 40px;
+    color: #000;
+    padding-right: 8px;
+}
+
+
+
+/* =================== Section : persona =================== */
+
+.persona {
+    padding: 80px 0 80px 0;
+}
+
+.persona-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.persona-inner h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 30px 0 140px 5px;
+}   
+
+.persona-content {
+    overflow: hidden;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.persona-content > div {
+    float: left;
+    width: 50%;
+}
+
+.persona-content p {
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.fa-user {
+    font-size: 26px;
+    color: #6D66FF;
+    padding-right: 10px;
+}
+
+/* =================== Section : merit =================== */
+
+.merit {
+    padding: 150px 0 200px 0;
+}
+
+.merit-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.merit-inner h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 0 5px;
+}
+
+.fa-thumbs-up {
+    font-size: 26px;
+    color: #6D66FF;
+    padding-right: 10px;
+}
+
+.merit-content {
+    overflow: hidden;
+    padding: 80px 0;
+    padding-top: 130px;
+    padding-left: 70px;
+}
+
+.merit-content > div {
+    float: left;
+    
+}
+input[name=tabmenu] {
+    display: none;
+}
+
+.tab-btn {
+    width: 60%;
+}
+
+.tab-btn label {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    color: #000;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.tab-btn label em {
+    display: inline-block;
+    background-color: #dcdde1;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tab-btn label #m-img2 {
+    padding-top: 5px;
+}
+
+.tab-btn label #m-img3 {
+    padding-top: 2px;
+}
+
+.tab-btn label span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tab-btn label em img {
+    width: 60px;
+}
+
+.tab-btn label span {
+    display: block;
+    margin-top: 20px;
+}
+
+.tabs {
+    width: 40%;
+}
+
+.tab {
+    display: none;
+    color: #000;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.tab h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tab p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Input Checked Function */
+
+input[id=tab1]:checked ~ .tabs .tab1,
+input[id=tab2]:checked ~ .tabs .tab2,
+input[id=tab3]:checked ~ .tabs .tab3 {
+    display: block;
+}
+
+input[id=tab1]:checked ~ .tab-btn label[for=tab1] em {
+    background-color: #6c5ce7;
+}
+
+input[id=tab2]:checked ~ .tab-btn label[for=tab2] em {
+    background-color: #9616FF;
+}
+
+input[id=tab3]:checked ~ .tab-btn label[for=tab3] em {
+    background-color: #4EF492;
+}
+
+input[id=tab1]:checked ~ .tab-btn label[for=tab1] em img,
+input[id=tab2]:checked ~ .tab-btn label[for=tab2] em img,
+input[id=tab3]:checked ~ .tab-btn label[for=tab3] em img {
+    filter: invert(100%) sepia(82%) saturate(401%) hue-rotate(179deg) brightness(101%) contrast(96%);
+}
+
+input[id=tab1]:checked ~ .tab-btn label[for=tab1] span {
+    color: #6c5ce7;
+}
+
+input[id=tab2]:checked ~ .tab-btn label[for=tab2] span {
+    color: #9616FF;
+}
+
+input[id=tab3]:checked ~ .tab-btn label[for=tab3] span {
+    color: #4EF492;
+}
+
+input[id=tab1]:checked ~ .tabs .tab1 h2 {
+    color: #6c5ce7;
+}
+
+input[id=tab2]:checked ~ .tabs .tab2 h2 {
+    color: #9616FF;
+}
+
+input[id=tab3]:checked ~ .tabs .tab3 h2 {
+    color: #4EF492;
+}
+
+
+/* =================== Section : function-intro =================== */
+
+.function-intro {
+    padding: 100px 0 100px 0;
+    background-color: #fff;
+}
+
+.function-intro-inner {
+    width: 1400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 80px 0 120px 0;
+}
+
+.intro-content {
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.intro-content > div {
+    float: left;
+}
+
+.intro-left {
+    width: 65%;
+    padding-left: 80px;
+}
+
+.intro-left h2 {
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.intro-left p {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.intro-right {
+    width: 35%;
+}
+
+.app-icon {
+    padding-top: 40px;
+}
+
+.app-icon img {
+    margin-right: 50px;
+}
+
+/* =================== Section : joy =================== */
+
+.joy {
+    padding: 200px 0 150px 0;
+    background-color: #ABA8FF;
+}
+
+.joy-inner {
+    width: 1400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 120px 0;
+}
+
+.joy-content {
+    overflow: hidden;
+    /* padding: 50px 0; */
+}
+
+.joy-content > div {
+    float: left;
+}
+
+.joy-desc {
+    width: 45%;
+    padding-left: 150px;
+}
+
+.joy-desc h2 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.joy-desc p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+.joy-slider {
+    width: 55%;
+    text-align: center;
+}
+
+.slider-mockup {
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.mockup-slider {
+    position: absolute;
+    width: 90%;
+    height: 660px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* =================== Section : lecture =================== */
+
+.lecture {
+    padding: 50px 0 150px 0;
+    background-color: #ABA8FF;
+}
+
+.lecture-inner {
+    width: 1400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 120px 0;
+}
+
+.lecture-content {
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.lecture-content > div {
+    float: left;
+}
+
+.lecture-slider {
+    width: 40%;
+    text-align: center;
+}
+
+.lecture-right {
+    width: 60%;
+    padding-left: 100px;
+}
+
+.lecture-right h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0 0 50px 5px;
+}
+
+.lecture-right p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-bottom: 120px;
+}
+
+.lecture-img img {
+    margin-right: 30px;
+}
+
+/* =================== Section : quiz =================== */
+
+.quiz {
+    padding: 50px 0 150px 0;
+    background-color: #ABA8FF;
+}
+
+.quiz-inner {
+    width: 1400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 170px 0;
+}
+
+.quiz-content .quiz-desc {
+    text-align: center;
+}
+
+.quiz-content .quiz-desc h2 {
+    font-weight: 600;
+    font-size: 42px;
+    /* margin-top: 100px; */
+}
+
+.quiz-content .quiz-desc p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 75px;
+    line-height: 1.8em;
+}
+
+.quiz-content .quiz-desc p span {
+    opacity: 0.5;
+}
+
+.quiz-content .quiz-img {
+    text-align: center;
+}
+
+.quiz-content .quiz-img img {
+    margin: 0 35px;
+}
+
+/* =================== Section : mock-invest =================== */
+
+.mock-invest {
+    padding: 50px 0 150px 0;
+    background-color: #ABA8FF;
+}
+
+.mock-inner {
+    width: 1400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 120px 0;
+}
+
+.mock-content {
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.mock-content > div {
+    float: left;
+}
+
+.mock-left {
+    width: 40%;
+    padding-left: 50px;
+}
+
+.mock-left h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0 0 30px 5px;
+}
+
+.mock-left p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.mock-right {
+    width: 60%;
+    padding-left: 50px;
+    padding-top: 45px;
+}
+
+.mock-right img {
+    text-align: center;
+    margin: 0 20px;
+}
+
+/* =================== Section : competition =================== */
+
+.competition {
+    padding: 50px 0 150px 0;
+    background-color: #ABA8FF;
+}
+
+.competition-inner {
+    width: 1400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 120px 0;
+}
+
+.competition-desc {
+    padding-left: 50px;
+}
+
+.competition-desc h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0 0 30px 5px;
+}
+
+.competition-desc p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-bottom: 70px;
+}
+
+.competition-img {
+    padding-left: 100px;
+}
+
+.competition-img img {
+    text-align: center;
+}
+
+/* =================== Section : shop =================== */
+
+.shop {
+    padding: 50px 0 150px 0;
+    background-color: #ABA8FF;
+}
+
+.shop-inner {
+    width: 1400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 120px 0;
+}
+
+.shop-content {
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.shop-content > div {
+    float: left;
+}
+
+.shop-left {
+    width: 40%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.shop-right {
+    width: 60%;
+    padding-left: 100px;
+}
+
+.shop-right h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0 0 50px 17px;
+}
+
+.shop-right p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 23px;
+    margin-bottom: 100px;
+}
+
+/* =================== Section : community =================== */
+
+.community {
+    padding: 50px 0 150px 0;
+    background-color: #ABA8FF;
+}
+
+.community-inner {
+    width: 1400px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 120px 0;
+}
+
+.community-content {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.community-content h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.community-content p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.community-img {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* =================== Section : Design-concept =================== */
+
+.design-concept-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.centering {
+    padding: 400px 0;
+    text-align: center;
+}
+
+.centering h2 {
+    font-weight: 700;
+    font-size: 60px;
+    padding-left: 5px;
+}
+
+/* =================== Section : logo-introduce =================== */
+
+.logo-introduce {
+    /* height: 90vh; */
+    padding: 0 0 150px 0;
+}
+
+.logo-introduce-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.logo-introduce-inner h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 100px 0 0 5px;
+}
+
+.logo-content {
+    text-align: center;
+}
+
+.logo-content .logo-img {
+    padding-top: 110px;
+}
+
+.logo-content p {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 70px;
+    margin-left: 8px;
+}
+
+/* =================== Section : logo-introduce2 =================== */
+
+.logo-introduce2 {
+    padding: 50px 0 150px 0;
+    background-color: #000;
+}
+
+.logo-introduce2-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.logo-icon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon1 img {
+    padding: 110px 220px;
+}
+
+.logo-icon2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon2 img {
+    padding: 75px 220px;
+}
+
+/* =================== Section : logo-introduce2 =================== */
+
+.mascot {
+    padding-bottom: 150px;
+}
+
+.mascot-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.mascot-inner h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 100px 0 0 5px;
+}
+
+.mascot-content1 {
+    overflow: hidden;
+    padding-top: 90px;
+    margin-bottom: 80px;
+}
+
+.mascot-content1 > div {
+    float: left;
+}
+
+.mascot-left {
+    width: 45%;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.mascot-right {
+    width: 55%;
+    padding-top: 33px;
+}
+
+.mascot-right h3 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 45px 0 30px 45px;
+}
+
+.mascot-right p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.mascot-content2 {
+    background-color: #F8F8F8;
+    height: 500px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.mascot-content2 p {
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 90px;
+}
+
+.mascot-img img {
+    padding: 60px;
+    padding-top: 50px;
+}
+
+/* =================== Section : color =================== */
+
+.color {
+    padding-bottom: 100px;
+}
+
+.color-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.color-inner h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 130px 0 0 5px;
+}
+
+.color-content {
+    overflow: hidden;
+    padding: 100px 70px 70px 70px;
+}
+
+.color-content > div {
+    float: left;
+}
+
+.color-left {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.color-left #color1 {
+    height: 200px;
+    background-color: #9615ff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.color-left #color1 p {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+}
+
+.color-left #color2 {
+    height: 200px;
+    background-color: #6d66ff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.color-left #color2 p {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+}
+
+.color-left #color3 {
+    height: 200px;
+    background-color: #52ff96;
+    border-radius: 15px;
+}
+
+.color-left #color3 p {
+    margin: 0;
+    font-size: 27px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+}
+
+.color-right {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.color-right #color4 {
+    height: 640px;
+    background-color: #030303;
+    border-radius: 15px;
+}
+
+.color-right #color4 p {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 640px;
+}
+
+/* =================== Section : Typography =================== */
+
+.typography {
+    padding-bottom: 150px;
+}
+
+.typo-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.typo-inner h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 110px 0 0 5px;
+}
+
+.typo-content {
+    overflow: hidden;
+    padding: 100px 70px 70px 70px;
+}
+
+.typo-content > div {
+    float: left;
+}
+
+.typo-left {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.bg {
+    height: 640px;
+    background-color: #F8F8F8;
+    border-radius: 15px;
+}
+
+.typo-left .bg h3 {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.typo-left .bg .big {
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.typo-left .bg .large {
+    font-size: 38px;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+.typo-left .bg .reg {
+    font-size: 26px;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.typo-left .bg .small {
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.typo-right {
+    width: 50%;
+}
+
+.bg2 {
+    height: 640px;
+    background-color: #F8F8F8;
+    border-radius: 15px;
+}
+
+.typo-right .bg2 h3 {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.typo-right .bg2 .big {
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.typo-right .bg2 .large {
+    font-size: 38px;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+.typo-right .bg2 .reg {
+    font-size: 26px;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.typo-right .bg2 .small {
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+/* =================== Section : Team =================== */
+
+.team {
+    /* height: 80vh; */
+    padding-bottom: 150px;
+}
+
+.team-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.team-content h2 {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0 20px 0;
+}
+.team-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-icon {
+    padding: 40px 80px 80px 80px;
+}
+
+.team-icon h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 20px;
+    margin-bottom: 13px;
+}
+
+.team-icon p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    line-height: 1.8em;
+}
+
+/* =================== Section : Review =================== */
+
+.review {
+    background-color: #f9f9f9;
+    padding: 150px 0;
+}
+
+.review-inner {
+    width: 1300px;
+    margin: auto;
+}
+
+.review-content {
+    text-align: center;
+    width: 900px;
+    margin: auto;
+}
+
+h1.slogan {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h1.slogan em {
+    font-style: normal;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 32px;
+}
+
+.review-slider div {
+    outline: none;
+}
+
+.review-slider div p {
+    padding: 0 70px;
+}
+
+.review-slider div p span {
+    display: block;
+    font-weight: 600;
+}
+
+.headline-share {
+    text-align: center;
+}
+
+.headline-share h1 {
+    font-size: 28px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.headline-share h1:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 80px;
+    background: linear-gradient(to right, #1f8de6, #5ed6fe);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.headline-share p {
+    font-size: 20px;
+}
+
+
+/* =================== Footer =================== */
+
+footer {
+    background-color: #f9f9f9;
+    color: #9F9F9F;
+    font-size: 14px;
+    padding: 60px 0;
+    border-top: 1px solid #DADADA;
+  }
+  .footer-inner {
+    width: 1300px;
+    margin: auto;
+  }
+  .footer-content {
+    overflow: hidden;
+  }
+  .footer-content > div {
+    float: left;
+  }
+  .footer-logo {
+    width: 15%;
+  }
+  .copyright {
+    width: 85%;
+    overflow: hidden;
+  }
+
+  .footer-logo img {
+    filter: invert(0.7);
+  }
+  .policy-sns {
+    overflow: hidden;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 20px;
+  }
+  .policy {
+    float: left;
+  }
+  .policy span:first-child a {
+    color: #9F9F9F;
+  }
+  .policy span:first-child em {
+    font-style: normal;
+    margin: 10px;
+    color: #B7B7B7;
+  }
+  .policy span:last-child {
+    display: block;
+  }
+  .sns {
+    float: right;
+  }
+  .sns i {
+    color: #ABA8FF;
+    font-size: 15px;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 25px;
+    margin: 1px;
+    transition: 0.5s;
+  }
+  .sns i:hover {
+    background-color: #8682FF;
+    color: #fff;
+  }
+  .address {
+    padding-top: 20px;
+  }
+  .address span {
+    display: block;
+  }
+
+  
+/* =================== Slick Custom CSS =================== */
+
+.slideshow .slick-arrow {
+    display: none !important;
+}
+
+.slideshow img {
+    outline: none;
+}
+
+/* Mockup-slider */
+
+.mockup-slider .slick-arrow {
+    display: none !important;
+}
+
+/* Review-slider */
+
+.review-slider .slick-dots li {
+    margin: 0;
+}
+
+.review-slider .slick-dots li button:before {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+.review-slider .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: transparent;
+    border: 1px solid #000;
+    border-radius: 50%;
+    top: -2px;
+    transform: scale(0.6);
+}
+
+/* Next & Prev btn */
+
+.review-slider .slick-prev:before,
+.review-slider .slick-next:before {
+  content:"\f104";
+  font-family: fontawesome;
+  color: #000;
+  font-size: 30px;
+  opacity: 1;
+}
+
+.review-slider .slick-next:before {
+  transform: rotateY(180deg);
+  display: block;
+}
+
+
+/* =================== Scroll-Top BTN =================== */
+
+.btn-top {
+    position: fixed;
+    right: 50px;
+    bottom: -50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    transition: 0.5s;
+}
+
+.btn-top.active {
+    bottom: 50px;
+}
+
+/* =================== Section - CallAction =================== */
+
+.white {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+}
+
+.callaction {
+    width: 100%;
+    height: 500px;
+    background: url("../IMG/callaction-img.png") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
