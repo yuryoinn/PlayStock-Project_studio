@@ -756,7 +756,7 @@ input[id=tab3]:checked ~ .tabs .tab3 h2 {
 }
 
 .competition-img {
-    padding-left: 100px;
+    padding-left: 125px;
 }
 
 .competition-img img {
@@ -849,6 +849,10 @@ input[id=tab3]:checked ~ .tabs .tab3 h2 {
 }
 
 /* =================== Section : Design-concept =================== */
+.design-concept {
+    background-image: url("../IMG/callaction-img.png") no-repeat center center;
+    background-size: cover;
+}
 
 .design-concept-inner {
     width: 1300px;
@@ -858,10 +862,6 @@ input[id=tab3]:checked ~ .tabs .tab3 h2 {
 .centering {
     padding: 400px 0;
     text-align: center;
-    background-image: url("../IMG/callaction-img.png") no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
 }
 
 .centering h2 {
