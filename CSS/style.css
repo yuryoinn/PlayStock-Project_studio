@@ -858,7 +858,7 @@ input[id=tab3]:checked ~ .tabs .tab3 h2 {
 .centering {
     padding: 400px 0;
     text-align: center;
-    background-image: url(../IMG/callaction-img.png) no-repeat center center;
+    background-image: url("../IMG/callaction-img.png") no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
