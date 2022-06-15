@@ -27,7 +27,7 @@ $(function() {
         infinite: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 1800
     });
 
     /* TypeIn - Welcome */
