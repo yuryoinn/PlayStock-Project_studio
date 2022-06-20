@@ -84,27 +84,51 @@ $(function(){
 
   /* Custom Mouse */
 
-  let x = 0;
-  let y = 0;
-  let cursor_item;
-  let mx = 0;
-  let my = 0;
-  let speed = 0.5;
+  let cursorItem;
+  let circle;
+  let x=0, y = 0;
+  let mx=0, my = 0;
 
-  window.onload = function() {
-    cursor_item = document.getElementsByClassName("custom-mouse")[0];
-    window.addEventListener("mousemove", mouseFunc, false);
+  window.onload = function(){
+    
+    cursorItem = document.querySelector(".cursorItem");
+    circle = cursorItem.querySelector(".circle");    
 
-    function mouseFunc(e) {
-      x = e.clientX;
-      y = e.clientY;
-    }
+    window.addEventListener("mousemove", function(e){
+        x = e.clientX;
+        y = e.clientY;
+        cursorItem.style.transform = "translate("+ x +"px, "+ y + "px )";
+    });
+    
     loop();
-  }
 
-  function loop() {
-    mx += (x - mx) * speed;
-    my += (y - my) * speed;
-    cursor_item.style.transform = "translate("+ mx + "px," + my + "px)";
-    window.requestAnimationFrame(loop);
-  }
+    /* Progressive Bar */
+
+    bar = document.getElementsByClassName("bar")[0];
+    
+}
+
+function loop(){
+    mx += (x - mx ) * .09;
+    my += (y - my ) * .09; 
+    cursorItem.style.transform = "translate("+ mx +"px, "+ my + "px )";
+
+    requestAnimationFrame(loop);
+}
+
+/* Progressive Bar */
+
+let scrollTop = 0;
+let bar;
+
+
+window.addEventListener("scroll", function(e){
+    scrollTop = document.documentElement.scrollTop;
+
+    // 가로 퍼센트값 = 현재 스크롤 탑 위치 / (문서 전체 길이 - 윈도우 창 높이 ) * 100;
+    let per = Math.ceil(scrollTop / (document.body.scrollHeight - window.outerHeight) * 100);
+    console.log(per);
+
+    bar.style.width = per + "%";
+
+}, false)
