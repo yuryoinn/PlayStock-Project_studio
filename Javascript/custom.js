@@ -27,7 +27,7 @@ $(function() {
         infinite: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 1800
+        autoplaySpeed: 1700
     });
 
     /* TypeIn - Welcome */
@@ -81,3 +81,30 @@ $(function(){
     })
     
   })
+
+  /* Custom Mouse */
+
+  let x = 0;
+  let y = 0;
+  let cursor_item;
+  let mx = 0;
+  let my = 0;
+  let speed = 0.5;
+
+  window.onload = function() {
+    cursor_item = document.getElementsByClassName("custom-mouse")[0];
+    window.addEventListener("mousemove", mouseFunc, false);
+
+    function mouseFunc(e) {
+      x = e.clientX;
+      y = e.clientY;
+    }
+    loop();
+  }
+
+  function loop() {
+    mx += (x - mx) * speed;
+    my += (y - my) * speed;
+    cursor_item.style.transform = "translate("+ mx + "px," + my + "px)";
+    window.requestAnimationFrame(loop);
+  }
